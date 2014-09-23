@@ -5,10 +5,15 @@
  */
 package py.una.pol.sgpry.client.services;
 
+import com.google.gwt.user.client.rpc.AsyncCallback;
+import py.una.pol.sgpry.server.db.responses.ResponseLogin;
+
 /**
  *
  * @author Ricardo Chirife <chirife.ricardo@gmail.com>
  */
 public interface UsuariosServiceAsync {
+
+    public void login(String usuario, String password, AsyncCallback<ResponseLogin> asyncCallback);
 
 }

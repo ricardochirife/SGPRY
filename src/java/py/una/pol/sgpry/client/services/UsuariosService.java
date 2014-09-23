@@ -7,6 +7,7 @@ package py.una.pol.sgpry.client.services;
 
 import com.google.gwt.user.client.rpc.RemoteService;
 import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
+import py.una.pol.sgpry.server.db.responses.ResponseLogin;
 
 /**
  *
@@ -14,4 +15,5 @@ import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
  */
 @RemoteServiceRelativePath("UsuariosService")
 public interface UsuariosService extends RemoteService {
+    public ResponseLogin login (String usuario, String password) throws Exception;
 }
